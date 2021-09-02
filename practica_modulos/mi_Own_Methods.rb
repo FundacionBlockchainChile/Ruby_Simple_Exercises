@@ -21,7 +21,7 @@ module MiEnumerable
     end
     return self 
   end
-
+# 
   def fullName()
     for i in 0...self.length
       self[i] = "#{self[i][:nombre]} #{self[i][:apellido]}"
@@ -48,7 +48,7 @@ end
 [1,2,3,4].mi_each { |i| puts i } # => 1 2 3 4
 [1,2,3,4].mi_each { |i| puts i * 10 } # => 10 20 30 40
 p [1,2,3,4].getSquares()  # => 1 4 9 16
-p ['cat','dog','bird','dinosaur'].returnLengths()  # => 1 4 9 16
+p ['cat','dog','bird','dinosaur'].returnLengths()  # => [3, 3, 4, 8]
 p [
   {nombre: 'Jhon', apellido: 'Doe', birth_year: 1980 },
   {nombre: 'Jane', apellido: 'Doe', birth_year: 1985 },
