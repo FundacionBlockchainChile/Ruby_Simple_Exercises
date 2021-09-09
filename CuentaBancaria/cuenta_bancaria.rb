@@ -1,7 +1,5 @@
 class CuentaBancaria
-  attr_accessor :saldo_cuenta_corriente, :saldo_cuenta_ahorro
-
-  @@no_of_clients = 0
+  @@no_of_client = 0
 
   def initialize(nombre, rut)
     @account_owner = nombre
@@ -11,8 +9,8 @@ class CuentaBancaria
     @saldo_cuenta_corriente = 0
     @saldo_cuenta_ahorro = 0
     @tasa_interes = 0.01
-    @@no_of_clients += 1
-    p "Creadas Cuentas a nombre de #{@account_owner}, cliente numero #{@@no_of_clients}"
+    @@no_of_client += 1
+    p "Creadas Cuentas a nombre de #{@account_owner}, cliente numero #{@@no_of_client}"
   end
 
   def show_number_of_clients()
